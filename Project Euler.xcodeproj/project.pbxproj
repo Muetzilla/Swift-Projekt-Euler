@@ -13,6 +13,7 @@
 		D5C062EA2817CDCD00DC8052 /* Problem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C062E92817CDCD00DC8052 /* Problem2.swift */; };
 		D5C6ADD72848F56200F1C07D /* Problem5.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C6ADD62848F56200F1C07D /* Problem5.swift */; };
 		D5D94EE72850C3AA0092C4D1 /* Problem3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D94EE62850C3AA0092C4D1 /* Problem3.swift */; };
+		D5E4B19B286D79F0002A1E25 /* Problem7.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4B19A286D79F0002A1E25 /* Problem7.swift */; };
 		D5E6FAB928571CF100FEA364 /* Problem6.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E6FAB828571CF100FEA364 /* Problem6.swift */; };
 		D5E77D152806D0F600FB9262 /* Project_EulerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E77D142806D0F600FB9262 /* Project_EulerApp.swift */; };
 		D5E77D192806D0F800FB9262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5E77D182806D0F800FB9262 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		D5C062E92817CDCD00DC8052 /* Problem2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem2.swift; sourceTree = "<group>"; };
 		D5C6ADD62848F56200F1C07D /* Problem5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem5.swift; sourceTree = "<group>"; };
 		D5D94EE62850C3AA0092C4D1 /* Problem3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem3.swift; sourceTree = "<group>"; };
+		D5E4B19A286D79F0002A1E25 /* Problem7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem7.swift; sourceTree = "<group>"; };
 		D5E6FAB828571CF100FEA364 /* Problem6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem6.swift; sourceTree = "<group>"; };
 		D5E77D112806D0F600FB9262 /* Project Euler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Euler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E77D142806D0F600FB9262 /* Project_EulerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_EulerApp.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				D56E65742850D192000FFE59 /* Problem4.swift */,
 				D5C6ADD62848F56200F1C07D /* Problem5.swift */,
 				D5E6FAB828571CF100FEA364 /* Problem6.swift */,
+				D5E4B19A286D79F0002A1E25 /* Problem7.swift */,
 				D5322302285C698B00D1CFCD /* Problem10.swift */,
 			);
 			path = Problems;
@@ -297,6 +300,7 @@
 				D56E65772850DBA9000FFE59 /* Util.swift in Sources */,
 				D5D94EE72850C3AA0092C4D1 /* Problem3.swift in Sources */,
 				D5E77D3F2806D4EF00FB9262 /* ProblemOverview.swift in Sources */,
+				D5E4B19B286D79F0002A1E25 /* Problem7.swift in Sources */,
 				D56E65752850D192000FFE59 /* Problem4.swift in Sources */,
 				D5E77D152806D0F600FB9262 /* Project_EulerApp.swift in Sources */,
 			);

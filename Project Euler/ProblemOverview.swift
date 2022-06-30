@@ -9,6 +9,7 @@ struct ProblemOverview: View {
        Problem(name: "Problem 4", description: "Check the largest Palidrome in a given area", detailView: AnyView(Problem4())),
        Problem(name: "Problem 5", description: "Find smalles number that is dividable by certain numbers", detailView: AnyView(Problem5())),
        Problem(name: "Problem 6", description: "Calculate difference betwenn sum and square", detailView: AnyView(Problem6())),
+       Problem(name: "Problem 7", description: "Find a specific prime number", detailView: AnyView(Problem7())),
        Problem(name: "Problem 10", description: "Calculate the sum of primes", detailView: AnyView(Problem10()))
     ]
     var body: some View {
