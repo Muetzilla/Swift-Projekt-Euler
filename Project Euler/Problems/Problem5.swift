@@ -5,8 +5,19 @@ struct Problem5: View {
 
     var body: some View {
         VStack{
-            Text("Problem 5")
-                .font(.title)
+            HStack{
+                Text("Problem 5")
+                    .font(.title)
+                Button {
+                    if let url = URL(string: "https://projecteuler.net/problem=5") {
+                        UIApplication.shared.open(url)
+                    }
+                } label: {
+                    Image(systemName: "arrowshape.turn.up.right.circle.fill")
+                } .help(Text("Tap to view this problem on the website"))
+                    .font(.subheadline)
+                
+            }
             Text("2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.What is the smallest positive number that is evenly dividible by all of the numbers farom 1 to 20?")
                 .font(.subheadline)
                 .padding()

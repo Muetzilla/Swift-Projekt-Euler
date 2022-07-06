@@ -4,8 +4,19 @@ struct Problem3: View {
     @State var result:Int = 0
     var body: some View {
         VStack{
-            Text("Problem 3")
-                .font(.title)
+            HStack{
+                Text("Problem 3")
+                    .font(.title)
+                Button {
+                    if let url = URL(string: "https://projecteuler.net/problem=3") {
+                        UIApplication.shared.open(url)
+                    }
+                } label: {
+                    Image(systemName: "arrowshape.turn.up.right.circle.fill")
+                } .help(Text("Tap to view this problem on the website"))
+                    .font(.subheadline)
+                
+            }
             Text("The prime factors of 13195 are 5, 7, 13 and 29.\nWhat is the largest prime factor of the number 600851475143 ?")
                 .font(.subheadline)
                 .padding()

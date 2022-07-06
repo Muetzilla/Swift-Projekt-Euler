@@ -5,8 +5,19 @@ struct Problem6: View {
 
     var body: some View {
         VStack{
-            Text("Problem 6")
-                .font(.title)
+            HStack{
+                Text("Problem 6")
+                    .font(.title)
+                Button {
+                    if let url = URL(string: "https://projecteuler.net/problem=6") {
+                        UIApplication.shared.open(url)
+                    }
+                } label: {
+                    Image(systemName: "arrowshape.turn.up.right.circle.fill")
+                } .help(Text("Tap to view this problem on the website"))
+                    .font(.subheadline)
+                
+            }
             Image("Projekt Euler Problem 6 Description")
                 .resizable()
                 .frame(width: 350.0, height: 125)

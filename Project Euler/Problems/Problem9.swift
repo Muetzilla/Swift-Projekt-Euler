@@ -1,15 +1,15 @@
 import SwiftUI
 
-struct Problem7: View {
+struct Problem9: View {
     @State var result:Int = 0
 
     var body: some View {
         VStack{
             HStack{
-                Text("Problem 7")
+                Text("Problem 9")
                     .font(.title)
                 Button {
-                    if let url = URL(string: "https://projecteuler.net/problem=7") {
+                    if let url = URL(string: "https://projecteuler.net/problem=9") {
                         UIApplication.shared.open(url)
                     }
                 } label: {
@@ -46,8 +46,8 @@ struct Problem7: View {
     }
 }
 
-struct Problem7_Previews: PreviewProvider {
+struct Problem9_Previews: PreviewProvider {
     static var previews: some View {
-        Problem7()
+        Problem9()
     }
 }

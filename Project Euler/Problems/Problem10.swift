@@ -5,8 +5,19 @@ struct Problem10: View {
     
     var body: some View {
         VStack{
-            Text("Problem 10")
-                .font(.title)
+            HStack{
+                Text("Problem 10")
+                    .font(.title)
+                Button {
+                    if let url = URL(string: "https://projecteuler.net/problem=10") {
+                        UIApplication.shared.open(url)
+                    }
+                } label: {
+                    Image(systemName: "arrowshape.turn.up.right.circle.fill")
+                } .help(Text("Tap to view this problem on the website"))
+                    .font(.subheadline)
+                
+            }
             Text("The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.\nFind the sum of all the primes below two million.")
                 .font(.subheadline)
                 .padding()

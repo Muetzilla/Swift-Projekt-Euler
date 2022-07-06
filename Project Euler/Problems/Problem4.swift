@@ -6,8 +6,19 @@ struct Problem4: View {
     
     var body: some View {
         VStack{
-            Text("Problem 4")
-                .font(.title)
+            HStack{
+                Text("Problem 4")
+                    .font(.title)
+                Button {
+                    if let url = URL(string: "https://projecteuler.net/problem=4") {
+                        UIApplication.shared.open(url)
+                    }
+                } label: {
+                    Image(systemName: "arrowshape.turn.up.right.circle.fill")
+                } .help(Text("Tap to view this problem on the website"))
+                    .font(.subheadline)
+                
+            }
             Text("A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.\nFind the largest palindrome made from the product of two 3-digit numbers.")
                 .font(.subheadline)
                 .padding()

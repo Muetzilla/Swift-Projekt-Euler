@@ -5,8 +5,19 @@ struct Problem1: View {
     
     var body: some View {
         VStack{
-            Text("Problem 1")
-                .font(.title)
+            HStack{
+                Text("Problem 1")
+                    .font(.title)
+                Button {
+                    if let url = URL(string: "https://projecteuler.net/problem=1") {
+                        UIApplication.shared.open(url)
+                    }
+                } label: {
+                    Image(systemName: "arrowshape.turn.up.right.circle.fill")
+                } .help(Text("Tap to view this problem on the website"))
+                    .font(.subheadline)
+                
+            }
             Text("If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23 Find the sum of all the multiples of 3 or 5 below 1000.")
                 .font(.subheadline)
                 .padding()
