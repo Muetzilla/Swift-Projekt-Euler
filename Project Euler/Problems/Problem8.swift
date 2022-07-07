@@ -56,8 +56,8 @@ struct Problem8: View {
         var tempString = wholeNumber
         var largestProdukt:Int64 = 0
         while tempString.count >= 13 {
-            if(getProductFromString(string: String(tempString.prefix(13))) > largestProdukt){
-                largestProdukt = Int64(getProductFromString(string: String(tempString.prefix(13))))
+            if(Util.getProductFromString(string: String(tempString.prefix(13))) > largestProdukt){
+                largestProdukt = Int64(Util.getProductFromString(string: String(tempString.prefix(13))))
             }
             tempString.remove(at: tempString.startIndex)
         }
@@ -65,17 +65,7 @@ struct Problem8: View {
         
         return Int64(largestProdukt)
     }
-    func getProductFromString(string: String) -> Int64{
-        debugPrint("String: \(string)")
-        var number: Int64 = Int64(string) ?? 0
-        var result: Int64 = 1
-        while(number != 0){
-            result = result * (number % 10)
-            number = number / 10
-        }
-        debugPrint("Result:  \(result)")
-        return result
-    }
+    
 }
 
 struct Problem8_Previews: PreviewProvider {

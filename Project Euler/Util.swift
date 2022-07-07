@@ -39,4 +39,13 @@ class Util:ObservableObject{
         }
             return isPrime
     }
+    static func getProductFromString(string: String) -> Int64{
+        var number: Int64 = Int64(string) ?? 0
+        var result: Int64 = 1
+        while(number != 0){
+            result = result * (number % 10)
+            number = number / 10
+        }
+        return result
+    }
 }

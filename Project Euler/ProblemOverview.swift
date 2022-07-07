@@ -8,7 +8,7 @@ struct ProblemOverview: View {
        Problem(name: "Problem 3", description: "Get prime factors from a number", detailView: AnyView(Problem3())),
        Problem(name: "Problem 4", description: "Check the largest Palidrome in a given area", detailView: AnyView(Problem4())),
        Problem(name: "Problem 5", description: "Find smalles number that is dividable by certain numbers", detailView: AnyView(Problem5())),
-       Problem(name: "Problem 6", description: "Calculate difference betwenn sum and square", detailView: AnyView(Problem6())),
+       Problem(name: "Problem 6", description: "Calculate difference between sum and square", detailView: AnyView(Problem6())),
        Problem(name: "Problem 7", description: "Find a specific prime number", detailView: AnyView(Problem7())),
        Problem(name: "Problem 8", description: "Find the largest sum in a grid", detailView: AnyView(Problem8())),
        Problem(name: "Problem 9", description: "Find a special Pythagorean triplet", detailView: AnyView(Problem9())),
