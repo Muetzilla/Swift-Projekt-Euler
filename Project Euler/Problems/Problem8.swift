@@ -18,12 +18,12 @@ struct Problem8: View {
                     .font(.subheadline)
                 
             }
-            Image("Problem 8")
+            Image("Problem8")
                 .resizable()
                 .frame(width: 350.0, height: 125)
             Divider()
-            Text("The difference is: \(result)").padding(.bottom)
-            Button("Calculate the smalles number", action:{
+            Text("The largest product is: \(result)").padding(.bottom)
+            Button("Calculate the largest produkt", action:{
                 result = getLargestProduct()
                 }
             ).padding(.bottom)
@@ -31,7 +31,8 @@ struct Problem8: View {
     }
     
     func getLargestProduct() -> Int64{
-        var wholeNumber = "73167176531330624919225119674426574742355349194934" +
+        let wholeNumber =
+        "73167176531330624919225119674426574742355349194934" +
         "96983520312774506326239578318016984801869478851843" +
         "85861560789112949495459501737958331952853208805511" +
         "12540698747158523863050715693290963295227443043557" +
@@ -56,17 +57,24 @@ struct Problem8: View {
         var largestProdukt:Int64 = 0
         while tempString.count >= 13 {
             if(getProductFromString(string: String(tempString.prefix(13))) > largestProdukt){
-                largestProdukt = getProductFromString(string: String(tempString.prefix(13)))
-                
-                
+                largestProdukt = Int64(getProductFromString(string: String(tempString.prefix(13))))
             }
+            tempString.remove(at: tempString.startIndex)
         }
         
         
         return Int64(largestProdukt)
     }
-    func getProductFromString(string:String) -> Int64{
-        return Int64(0)
+    func getProductFromString(string: String) -> Int64{
+        debugPrint("String: \(string)")
+        var number: Int64 = Int64(string) ?? 0
+        var result: Int64 = 1
+        while(number != 0){
+            result = result * (number % 10)
+            number = number / 10
+        }
+        debugPrint("Result:  \(result)")
+        return result
     }
 }
 
