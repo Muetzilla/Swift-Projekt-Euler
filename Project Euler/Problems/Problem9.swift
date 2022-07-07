@@ -18,36 +18,38 @@ struct Problem9: View {
                     .font(.subheadline)
                 
             }
-            Text("By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.\nWhat is the 10 001st prime number?")
-                .font(.subheadline)
-                .padding()
+            Image("Problem9")
+                .resizable()
+                .frame(width: 350.0, height: 125)
             Divider()
-            Text("The 10001st prime is: \(result)").padding(.bottom)
-            Button("Calculate the 1001st prime", action:{
-                result = getSpecificPrime()
+            Text("The product of the Pythagorean triplet is: \(result)").padding(.bottom)
+            Text("⚠️ Attention it migth take a while to calculate the product⚠️ ").foregroundColor(.red).fontWeight(.bold).font(.system(size: 13)).padding(.bottom)
+            Button("Find the product of the Pythagorean triplet", action:{
+                result = findPythagoreanTriplet()
                 }
             ).padding(.bottom)
         }
     }
     
-    func getSpecificPrime() -> Int{
-        var currentPrime:Int = 1
-        var primeIndex:Int = 0
-        while true{
-            if(Util.isPrim(numberToCheck: currentPrime)){
-                primeIndex += 1
-                if(primeIndex == 10_001){
-                    break
+    func findPythagoreanTriplet() -> Int{
+        let sumPythagoreanTriplet:Int = 1000
+        for a in 1 ... sumPythagoreanTriplet{
+            for b in 1 ... sumPythagoreanTriplet{
+                for c in 1 ... sumPythagoreanTriplet{
+                    if(a * a + b * b == c * c && a + b + c == sumPythagoreanTriplet){
+                        return a * b * c
+                    }
                 }
             }
-            currentPrime += 1
         }
-        return currentPrime
+        return 0
     }
+    
 }
 
-struct Problem9_Previews: PreviewProvider {
-    static var previews: some View {
-        Problem9()
+    struct Problem9_Previews: PreviewProvider {
+        static var previews: some View {
+            Problem9()
+        }
     }
-}
+

@@ -23,7 +23,7 @@ struct Problem8: View {
                 .frame(width: 350.0, height: 125)
             Divider()
             Text("The largest product is: \(result)").padding(.bottom)
-            Button("Calculate the largest produkt", action:{
+            Button("Calculate the largest product", action:{
                 result = getLargestProduct()
                 }
             ).padding(.bottom)

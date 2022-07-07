@@ -11,7 +11,7 @@ struct ProblemOverview: View {
        Problem(name: "Problem 6", description: "Calculate difference betwenn sum and square", detailView: AnyView(Problem6())),
        Problem(name: "Problem 7", description: "Find a specific prime number", detailView: AnyView(Problem7())),
        Problem(name: "Problem 8", description: "Find the largest sum in a grid", detailView: AnyView(Problem8())),
-       Problem(name: "Problem 9", description: "Find Special Pythagorean triplet", detailView: AnyView(Problem9())),
+       Problem(name: "Problem 9", description: "Find a special Pythagorean triplet", detailView: AnyView(Problem9())),
        Problem(name: "Problem 10", description: "Calculate the sum of primes", detailView: AnyView(Problem10()))
     ]
     var body: some View {
