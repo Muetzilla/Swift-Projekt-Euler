@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D5322303285C698B00D1CFCD /* Problem10.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5322302285C698B00D1CFCD /* Problem10.swift */; };
 		D56E65752850D192000FFE59 /* Problem4.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56E65742850D192000FFE59 /* Problem4.swift */; };
-		D5A33F2E287DB2270094269D /* SwiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = D5A33F2D287DB2270094269D /* SwiftLibrary */; };
+		D5A33F34287DB6C30094269D /* SwiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = D5A33F33287DB6C30094269D /* SwiftLibrary */; };
 		D5C062EA2817CDCD00DC8052 /* Problem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C062E92817CDCD00DC8052 /* Problem2.swift */; };
 		D5C6ADD72848F56200F1C07D /* Problem5.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C6ADD62848F56200F1C07D /* Problem5.swift */; };
 		D5D94EE72850C3AA0092C4D1 /* Problem3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D94EE62850C3AA0092C4D1 /* Problem3.swift */; };
@@ -20,7 +20,7 @@
 		D5E77D152806D0F600FB9262 /* Project_EulerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E77D142806D0F600FB9262 /* Project_EulerApp.swift */; };
 		D5E77D192806D0F800FB9262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5E77D182806D0F800FB9262 /* Assets.xcassets */; };
 		D5E77D1C2806D0F800FB9262 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5E77D1B2806D0F800FB9262 /* Preview Assets.xcassets */; };
-		D5E77D262806D0F800FB9262 /* Project_EulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E77D252806D0F800FB9262 /* Project_EulerTests.swift */; };
+		D5E77D262806D0F800FB9262 /* Projekt_Euler Problem Result Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E77D252806D0F800FB9262 /* Projekt_Euler Problem Result Tests.swift */; };
 		D5E77D302806D0F800FB9262 /* Project_EulerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E77D2F2806D0F800FB9262 /* Project_EulerUITests.swift */; };
 		D5E77D322806D0F800FB9262 /* Project_EulerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E77D312806D0F800FB9262 /* Project_EulerUITestsLaunchTests.swift */; };
 		D5E77D3F2806D4EF00FB9262 /* ProblemOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E77D3E2806D4EF00FB9262 /* ProblemOverview.swift */; };
@@ -59,7 +59,7 @@
 		D5E77D182806D0F800FB9262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5E77D1B2806D0F800FB9262 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D5E77D212806D0F800FB9262 /* Project EulerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project EulerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5E77D252806D0F800FB9262 /* Project_EulerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_EulerTests.swift; sourceTree = "<group>"; };
+		D5E77D252806D0F800FB9262 /* Projekt_Euler Problem Result Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Projekt_Euler Problem Result Tests.swift"; sourceTree = "<group>"; };
 		D5E77D2B2806D0F800FB9262 /* Project EulerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project EulerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E77D2F2806D0F800FB9262 /* Project_EulerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_EulerUITests.swift; sourceTree = "<group>"; };
 		D5E77D312806D0F800FB9262 /* Project_EulerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_EulerUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5A33F2E287DB2270094269D /* SwiftLibrary in Frameworks */,
+				D5A33F34287DB6C30094269D /* SwiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +136,7 @@
 		D5E77D242806D0F800FB9262 /* Project EulerTests */ = {
 			isa = PBXGroup;
 			children = (
-				D5E77D252806D0F800FB9262 /* Project_EulerTests.swift */,
+				D5E77D252806D0F800FB9262 /* Projekt_Euler Problem Result Tests.swift */,
 			);
 			path = "Project EulerTests";
 			sourceTree = "<group>";
@@ -184,7 +184,7 @@
 			);
 			name = "Project Euler";
 			packageProductDependencies = (
-				D5A33F2D287DB2270094269D /* SwiftLibrary */,
+				D5A33F33287DB6C30094269D /* SwiftLibrary */,
 			);
 			productName = "Project Euler";
 			productReference = D5E77D112806D0F600FB9262 /* Project Euler.app */;
@@ -259,7 +259,7 @@
 			);
 			mainGroup = D5E77D082806D0F600FB9262;
 			packageReferences = (
-				D5A33F2C287DB2270094269D /* XCRemoteSwiftPackageReference "SwiftLibrary" */,
+				D5A33F32287DB6C30094269D /* XCRemoteSwiftPackageReference "SwiftLibrary" */,
 			);
 			productRefGroup = D5E77D122806D0F600FB9262 /* Products */;
 			projectDirPath = "";
@@ -322,7 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5E77D262806D0F800FB9262 /* Project_EulerTests.swift in Sources */,
+				D5E77D262806D0F800FB9262 /* Projekt_Euler Problem Result Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,7 +643,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D5A33F2C287DB2270094269D /* XCRemoteSwiftPackageReference "SwiftLibrary" */ = {
+		D5A33F32287DB6C30094269D /* XCRemoteSwiftPackageReference "SwiftLibrary" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Muetzilla/SwiftLibrary.git";
 			requirement = {
@@ -654,9 +654,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D5A33F2D287DB2270094269D /* SwiftLibrary */ = {
+		D5A33F33287DB6C30094269D /* SwiftLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D5A33F2C287DB2270094269D /* XCRemoteSwiftPackageReference "SwiftLibrary" */;
+			package = D5A33F32287DB6C30094269D /* XCRemoteSwiftPackageReference "SwiftLibrary" */;
 			productName = SwiftLibrary;
 		};
 /* End XCSwiftPackageProductDependency section */
