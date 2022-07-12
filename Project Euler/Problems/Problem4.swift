@@ -1,4 +1,5 @@
 import SwiftUI
+import SwiftLibrary
 
 struct Problem4: View {
     @State var result:Int = 0

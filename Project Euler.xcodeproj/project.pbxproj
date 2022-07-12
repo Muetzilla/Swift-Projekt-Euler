@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D5322303285C698B00D1CFCD /* Problem10.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5322302285C698B00D1CFCD /* Problem10.swift */; };
 		D56E65752850D192000FFE59 /* Problem4.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56E65742850D192000FFE59 /* Problem4.swift */; };
-		D56E65772850DBA9000FFE59 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56E65762850DBA9000FFE59 /* Util.swift */; };
+		D5A33F2E287DB2270094269D /* SwiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = D5A33F2D287DB2270094269D /* SwiftLibrary */; };
 		D5C062EA2817CDCD00DC8052 /* Problem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C062E92817CDCD00DC8052 /* Problem2.swift */; };
 		D5C6ADD72848F56200F1C07D /* Problem5.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C6ADD62848F56200F1C07D /* Problem5.swift */; };
 		D5D94EE72850C3AA0092C4D1 /* Problem3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D94EE62850C3AA0092C4D1 /* Problem3.swift */; };
@@ -47,7 +47,6 @@
 /* Begin PBXFileReference section */
 		D5322302285C698B00D1CFCD /* Problem10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem10.swift; sourceTree = "<group>"; };
 		D56E65742850D192000FFE59 /* Problem4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem4.swift; sourceTree = "<group>"; };
-		D56E65762850DBA9000FFE59 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		D5C062E92817CDCD00DC8052 /* Problem2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem2.swift; sourceTree = "<group>"; };
 		D5C6ADD62848F56200F1C07D /* Problem5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem5.swift; sourceTree = "<group>"; };
 		D5D94EE62850C3AA0092C4D1 /* Problem3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem3.swift; sourceTree = "<group>"; };
@@ -73,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5A33F2E287DB2270094269D /* SwiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +119,6 @@
 				D5E77D402806D50F00FB9262 /* Problems */,
 				D5E77D142806D0F600FB9262 /* Project_EulerApp.swift */,
 				D5E77D3E2806D4EF00FB9262 /* ProblemOverview.swift */,
-				D56E65762850DBA9000FFE59 /* Util.swift */,
 				D5E77D182806D0F800FB9262 /* Assets.xcassets */,
 				D5E77D1A2806D0F800FB9262 /* Preview Content */,
 			);
@@ -184,6 +183,9 @@
 			dependencies = (
 			);
 			name = "Project Euler";
+			packageProductDependencies = (
+				D5A33F2D287DB2270094269D /* SwiftLibrary */,
+			);
 			productName = "Project Euler";
 			productReference = D5E77D112806D0F600FB9262 /* Project Euler.app */;
 			productType = "com.apple.product-type.application";
@@ -256,6 +258,9 @@
 				Base,
 			);
 			mainGroup = D5E77D082806D0F600FB9262;
+			packageReferences = (
+				D5A33F2C287DB2270094269D /* XCRemoteSwiftPackageReference "SwiftLibrary" */,
+			);
 			productRefGroup = D5E77D122806D0F600FB9262 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -304,7 +309,6 @@
 				D5E4B19F286DA6B5002A1E25 /* Problem9.swift in Sources */,
 				D5C6ADD72848F56200F1C07D /* Problem5.swift in Sources */,
 				D5E77D422806D52900FB9262 /* Problem1.swift in Sources */,
-				D56E65772850DBA9000FFE59 /* Util.swift in Sources */,
 				D5E4B19D286DA699002A1E25 /* Problem8.swift in Sources */,
 				D5D94EE72850C3AA0092C4D1 /* Problem3.swift in Sources */,
 				D5E77D3F2806D4EF00FB9262 /* ProblemOverview.swift in Sources */,
@@ -637,6 +641,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D5A33F2C287DB2270094269D /* XCRemoteSwiftPackageReference "SwiftLibrary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Muetzilla/SwiftLibrary.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D5A33F2D287DB2270094269D /* SwiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5A33F2C287DB2270094269D /* XCRemoteSwiftPackageReference "SwiftLibrary" */;
+			productName = SwiftLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D5E77D092806D0F600FB9262 /* Project object */;
 }

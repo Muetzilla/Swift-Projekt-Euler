@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swiftlibrary",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Muetzilla/SwiftLibrary.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "2ab405ba6b1d6437ae9220ecd5c5ef7d7a5dfe06"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -1,5 +1,5 @@
 import SwiftUI
-
+import SwiftLibrary
 struct Problem8: View {
     @State var result:Int64 = 0
 
