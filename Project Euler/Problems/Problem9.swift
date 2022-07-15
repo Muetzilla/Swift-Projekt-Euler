@@ -30,22 +30,21 @@ struct Problem9: View {
             ).padding(.bottom)
         }
     }
-    
-    func findPythagoreanTriplet() -> Int{
-        let sumPythagoreanTriplet:Int = 1000
-        for a in 1 ... sumPythagoreanTriplet{
-            for b in 1 ... sumPythagoreanTriplet{
-                for c in 1 ... sumPythagoreanTriplet{
-                    if(a * a + b * b == c * c && a + b + c == sumPythagoreanTriplet){
-                        return a * b * c
-                    }
+}
+public func findPythagoreanTriplet() -> Int{
+    let sumPythagoreanTriplet:Int = 1000
+    for a in 1 ... sumPythagoreanTriplet{
+        for b in 1 ... sumPythagoreanTriplet{
+            for c in 1 ... sumPythagoreanTriplet{
+                if(a * a + b * b == c * c && a + b + c == sumPythagoreanTriplet){
+                    return a * b * c
                 }
             }
         }
-        return 0
     }
-    
+    return 0
 }
+
 
     struct Problem9_Previews: PreviewProvider {
         static var previews: some View {

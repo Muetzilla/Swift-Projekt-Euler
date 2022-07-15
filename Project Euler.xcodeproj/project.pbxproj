@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D5322303285C698B00D1CFCD /* Problem10.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5322302285C698B00D1CFCD /* Problem10.swift */; };
 		D56E65752850D192000FFE59 /* Problem4.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56E65742850D192000FFE59 /* Problem4.swift */; };
-		D5A33F34287DB6C30094269D /* SwiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = D5A33F33287DB6C30094269D /* SwiftLibrary */; };
+		D5AF8C5A287FEC3800E1EC58 /* SwiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = D5AF8C59287FEC3800E1EC58 /* SwiftLibrary */; };
 		D5C062EA2817CDCD00DC8052 /* Problem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C062E92817CDCD00DC8052 /* Problem2.swift */; };
 		D5C6ADD72848F56200F1C07D /* Problem5.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C6ADD62848F56200F1C07D /* Problem5.swift */; };
 		D5D94EE72850C3AA0092C4D1 /* Problem3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D94EE62850C3AA0092C4D1 /* Problem3.swift */; };
@@ -47,6 +47,7 @@
 /* Begin PBXFileReference section */
 		D5322302285C698B00D1CFCD /* Problem10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem10.swift; sourceTree = "<group>"; };
 		D56E65742850D192000FFE59 /* Problem4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem4.swift; sourceTree = "<group>"; };
+		D5AF8C57287FEA6500E1EC58 /* SwiftLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftLibrary; path = ../SwiftLibrary; sourceTree = "<group>"; };
 		D5C062E92817CDCD00DC8052 /* Problem2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem2.swift; sourceTree = "<group>"; };
 		D5C6ADD62848F56200F1C07D /* Problem5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem5.swift; sourceTree = "<group>"; };
 		D5D94EE62850C3AA0092C4D1 /* Problem3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem3.swift; sourceTree = "<group>"; };
@@ -72,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5A33F34287DB6C30094269D /* SwiftLibrary in Frameworks */,
+				D5AF8C5A287FEC3800E1EC58 /* SwiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,9 +94,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D5AF8C56287FEA6500E1EC58 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				D5AF8C57287FEA6500E1EC58 /* SwiftLibrary */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		D5E77D082806D0F600FB9262 = {
 			isa = PBXGroup;
 			children = (
+				D5AF8C56287FEA6500E1EC58 /* Packages */,
 				D5E77D132806D0F600FB9262 /* Project Euler */,
 				D5E77D242806D0F800FB9262 /* Project EulerTests */,
 				D5E77D2E2806D0F800FB9262 /* Project EulerUITests */,
@@ -184,7 +194,7 @@
 			);
 			name = "Project Euler";
 			packageProductDependencies = (
-				D5A33F33287DB6C30094269D /* SwiftLibrary */,
+				D5AF8C59287FEC3800E1EC58 /* SwiftLibrary */,
 			);
 			productName = "Project Euler";
 			productReference = D5E77D112806D0F600FB9262 /* Project Euler.app */;
@@ -259,7 +269,7 @@
 			);
 			mainGroup = D5E77D082806D0F600FB9262;
 			packageReferences = (
-				D5A33F32287DB6C30094269D /* XCRemoteSwiftPackageReference "SwiftLibrary" */,
+				D5AF8C58287FEC3800E1EC58 /* XCRemoteSwiftPackageReference "SwiftLibrary" */,
 			);
 			productRefGroup = D5E77D122806D0F600FB9262 /* Products */;
 			projectDirPath = "";
@@ -643,20 +653,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D5A33F32287DB6C30094269D /* XCRemoteSwiftPackageReference "SwiftLibrary" */ = {
+		D5AF8C58287FEC3800E1EC58 /* XCRemoteSwiftPackageReference "SwiftLibrary" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Muetzilla/SwiftLibrary.git";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = revision;
+				revision = 2ab405ba6b1d6437ae9220ecd5c5ef7d7a5dfe06;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D5A33F33287DB6C30094269D /* SwiftLibrary */ = {
+		D5AF8C59287FEC3800E1EC58 /* SwiftLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D5A33F32287DB6C30094269D /* XCRemoteSwiftPackageReference "SwiftLibrary" */;
+			package = D5AF8C58287FEC3800E1EC58 /* XCRemoteSwiftPackageReference "SwiftLibrary" */;
 			productName = SwiftLibrary;
 		};
 /* End XCSwiftPackageProductDependency section */

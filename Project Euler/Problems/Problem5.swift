@@ -28,27 +28,27 @@ struct Problem5: View {
                 result = getSmallestNumber()}).padding(.bottom)
         }
     }
-    
-    func getSmallestNumber() -> Int{
-        var smallestNumber = 0
-        var currentNumber = 1
-        while(true){
-            var evenlyDividible = true
-            for i in stride(from: 20, to: 1, by: -1){
-                if(currentNumber % i != 0){
-                    evenlyDividible = false
-                    break
-                }
-            }
-            
-            if(evenlyDividible){
-                smallestNumber = currentNumber
+}
+
+public func getSmallestNumber() -> Int{
+    var smallestNumber = 0
+    var currentNumber = 1
+    while(true){
+        var evenlyDividible = true
+        for i in stride(from: 20, to: 1, by: -1){
+            if(currentNumber % i != 0){
+                evenlyDividible = false
                 break
             }
-            currentNumber += 1
         }
-        return smallestNumber
+        
+        if(evenlyDividible){
+            smallestNumber = currentNumber
+            break
+        }
+        currentNumber += 1
     }
+    return smallestNumber
 }
 
 struct Problem5_Previews: PreviewProvider {

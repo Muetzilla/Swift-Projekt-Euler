@@ -30,21 +30,21 @@ struct Problem7: View {
             ).padding(.bottom)
         }
     }
-    
-    func getSpecificPrime() -> Int{
-        var currentPrime:Int = 1
-        var primeIndex:Int = 0
-        while true{
-            if(Util.isPrim(numberToCheck: currentPrime)){
-                primeIndex += 1
-                if(primeIndex == 10_001){
-                    break
-                }
+}
+
+public func getSpecificPrime() -> Int{
+    var currentPrime:Int = 1
+    var primeIndex:Int = 0
+    while true{
+        if(Util.isPrim(numberToCheck: currentPrime)){
+            primeIndex += 1
+            if(primeIndex == 10_001){
+                break
             }
-            currentPrime += 1
         }
-        return currentPrime
+        currentPrime += 1
     }
+    return currentPrime
 }
 
 struct Problem7_Previews: PreviewProvider {

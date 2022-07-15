@@ -32,18 +32,17 @@ struct Problem4: View {
             ).padding(.bottom)
         }
     }
-    
-    func getPalidrome() -> Int{
-        var palidromes: [Int] = []
-        for i in 100...999{
-            for j in 100...999{
-                if(Util.isPalidrome(number: i * j)){
-                    palidromes.append(i * j)
-                }
+}
+public func getPalidrome() -> Int{
+    var palidromes: [Int] = []
+    for i in 100...999{
+        for j in 100...999{
+            if(Util.isPalidrome(number: i * j)){
+                palidromes.append(i * j)
             }
         }
-        return palidromes.max() ?? 0
     }
+    return palidromes.max() ?? 0
 }
 
 

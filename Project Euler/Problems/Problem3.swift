@@ -29,24 +29,23 @@ struct Problem3: View {
             
         }
     }
+}
+public func getLargesPrimeFactor() -> Int{
+    var originalNumber = 600851475143
+    var primeFactors:[Int] = []
+    var tempPrimeFactor = 2
     
-    func getLargesPrimeFactor() -> Int{
-        var originalNumber = 600851475143
-        var primeFactors:[Int] = []
-        var tempPrimeFactor = 2
-        
-        while(originalNumber > 1){
-            while (originalNumber % tempPrimeFactor == 0) {
-                primeFactors.append(tempPrimeFactor)
-                originalNumber /= tempPrimeFactor
-                
-            }
-            tempPrimeFactor += 1
+    while(originalNumber > 1){
+        while (originalNumber % tempPrimeFactor == 0) {
+            primeFactors.append(tempPrimeFactor)
+            originalNumber /= tempPrimeFactor
+            
         }
-        
-        
-        return primeFactors.max() ?? 0
+        tempPrimeFactor += 1
     }
+    
+    
+    return primeFactors.max() ?? 0
 }
 
 struct Problem3_Previews: PreviewProvider {

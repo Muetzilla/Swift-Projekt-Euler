@@ -29,16 +29,15 @@ struct Problem6: View {
             ).padding(.bottom)
         }
     }
-    
-    func getDifference() -> Int64{
-        var sum:Int64 = 0
-        var sumOfSquares:Int64 = 0
-        for i in 1...100{
-            sum += Int64(i)
-            sumOfSquares += Int64(i * i)
-        }
-        return Int64(sum * sum - sumOfSquares)
+}
+public  func getDifference() -> Int64{
+    var sum:Int64 = 0
+    var sumOfSquares:Int64 = 0
+    for i in 1...100{
+        sum += Int64(i)
+        sumOfSquares += Int64(i * i)
     }
+    return Int64(sum * sum - sumOfSquares)
 }
 
 struct Problem6_Previews: PreviewProvider {

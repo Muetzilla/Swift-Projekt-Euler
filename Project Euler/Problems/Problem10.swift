@@ -34,7 +34,7 @@ struct Problem10: View {
 }
 
 
-func calculateSumOfPrimes() -> Int{
+public func calculateSumOfPrimes() -> Int{
     var sum = 0
     for i in 1...2_000_000{
         if(Util.isPrim(numberToCheck: i)){

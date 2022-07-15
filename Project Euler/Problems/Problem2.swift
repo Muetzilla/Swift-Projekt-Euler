@@ -29,23 +29,22 @@ struct Problem2: View {
             
         }
     }
-    
-    func sumOfEvenFibonacciTerms() -> Int{
-        var n1 = 1
-        var n2 = 2
-        var result = 0
+}
+public func sumOfEvenFibonacciTerms() -> Int{
+    var n1 = 1
+    var n2 = 2
+    var result = 0
 
-        while (n1 <= 4000000) {
-            var tempN1: Int
-            if (n1 % 2 == 0) {
-                result += n1
-            }
-            tempN1 = n1
-            n1 = n2
-            n2 += tempN1
+    while (n1 <= 4000000) {
+        var tempN1: Int
+        if (n1 % 2 == 0) {
+            result += n1
         }
-        return result
+        tempN1 = n1
+        n1 = n2
+        n2 += tempN1
     }
+    return result
 }
 
 struct Problem2_Previews: PreviewProvider {
